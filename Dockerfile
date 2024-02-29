@@ -10,5 +10,5 @@ WORKDIR /var/www/html
 RUN unzip oxer.zip
 RUN cp -rvf oxer-html/* .
 EXPOSE 80
-CMD ["/usr/sbin/apache3ctl", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
